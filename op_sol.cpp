@@ -8,8 +8,8 @@ void solve() {
 	int n;
 	cin >> n;
 	int tax=0;
-  //create an if-else ladder to accumulate the taxes
-  //find the min between 'n' and the smallest value in the range and apply the percentage of tax
+  	//create an if-else ladder to accumulate the taxes
+  	//find the min between 'n' and the smallest value in the range and apply the percentage of tax
 	if(n>250000)
 		tax+=(min(n, 500000)-250000)*5/100;
 	if(n>500000)
@@ -22,7 +22,7 @@ void solve() {
 		tax+=(min(n, 1500000)-1250000)*25/100;
 	if(n>1500000)
 		tax+=(n-1500000)*30/100;
-  //subtract the total tax from the current money
+  	//subtract the total tax from the current money
 	cout << n-tax << "\n";
 }
 
